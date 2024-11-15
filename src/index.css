@@ -1,0 +1,15 @@
+/* src/index.css */
+
+/* Aplicar Open Sans como fuente global */
+html, body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Ejemplo de uso de diferentes pesos */
+.text-regular {
+  font-weight: 400; /* Regular */
+}
+
+.text-bold {
+  font-weight: 700; /* Bold */
+}

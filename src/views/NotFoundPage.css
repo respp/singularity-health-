@@ -1,0 +1,29 @@
+/* NotFoundPage.css */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.not-found-page {
+    width: 100vw; /* Ocupa todo el ancho de la ventana */
+    height: 100vh; /* Ocupa todo el alto de la ventana */
+    padding: 0;
+    margin: 0;
+    
+    /* Imagen de fondo */
+    background-image: url('/images/wave-2.png'); /* Ruta de tu imagen */
+    background-size: cover; /* Cubre todo el contenedor */
+    background-position: 50% -40%;  /* Pegada arriba y centrada horizontalmente */
+    background-repeat: no-repeat; /* No repetir */
+}
+
+.not-found-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
