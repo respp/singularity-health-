@@ -1,11 +1,29 @@
-/* src/index.css */
+:root {
+  /* Primary Colors */
+  --primary-orange: #FF6752;
+  --secondary-orange: #FD6845;
+  --tertiary-orange: #FE6845;
+  --light-orange: #FFA046;
 
-/* Aplicar Open Sans como fuente global */
+  /* Accent Colors */
+  --primary-blue: #4487FF;
+  --dark-blue: #00225C;
+
+  /* Neutral Colors */
+  --light-gray: #F8F8F8;
+  --medium-gray: #808080;
+  --dark-gray: #B1BBCD;
+
+  /* Additional Colors */
+  --purple: #7569DE;
+  --green: #9ECB45;
+}
+
+
 html, body {
   font-family: 'Open Sans', sans-serif;
 }
 
-/* Ejemplo de uso de diferentes pesos */
 .text-regular {
   font-weight: 400; /* Regular */
 }

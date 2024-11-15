@@ -13,7 +13,7 @@ body {
 
     padding: 0;
     margin: 0;    
-    background-image: url('/images/bg-image.png'); /* Ruta de tu imagen */
+    background-image: url('/images/webp/bg-image.jpg'); /* Ruta de tu imagen */
     background-size: contain; /* Ajusta la imagen para que se contenga en el contenedor */
     background-repeat: no-repeat; /* Evita que se repita */
     background-position: top center; /* Centra la imagen horizontalmente y se alinea arriba */

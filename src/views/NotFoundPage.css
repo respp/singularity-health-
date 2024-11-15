@@ -1,22 +1,67 @@
 /* NotFoundPage.css */
-body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    width: 100%;
-}
-
 .not-found-page {
     width: 100vw; /* Ocupa todo el ancho de la ventana */
     height: 100vh; /* Ocupa todo el alto de la ventana */
+    overflow: hidden; /* Elimina las barras de desplazamiento */
     padding: 0;
     margin: 0;
     
     /* Imagen de fondo */
-    background-image: url('/images/wave-2.png'); /* Ruta de tu imagen */
+    background-image: url('/images/webp/wave-2.webp'); /* Ruta de tu imagen */
     background-size: cover; /* Cubre todo el contenedor */
     background-position: 50% -40%;  /* Pegada arriba y centrada horizontalmente */
     background-repeat: no-repeat; /* No repetir */
+
+    color: var(--primary-orange);
+}
+
+.balls-bg {
+    position: relative; /* Hacer que el contenedor sea un contenedor de referencia para las pelotas */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.ball {
+    position: absolute; /* Hace que cada pelota se pueda posicionar independientemente */
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    animation: rotate 13s linear infinite; /* Animación de rotación */
+}
+
+.blue-ball {
+    background-image: url('/images/webp/404-circle-blue.webp');
+    background-position: center;
+    bottom: -20%; /* Ajusta la posición vertical de la pelota azul */
+    left: 10%; /* Ajusta la posición horizontal de la pelota azul */
+    margin-right: 10%; /* Espacio entre las pelotas */
+    height: 260px;
+    width: 260px;
+    z-index: 0;
+}
+
+.yellow-ball {
+    background-image: url('/images/webp/404-circle-yellow.webp');
+    background-position: center;
+    top: 10%; /* Ajusta la posición vertical de la pelota amarilla */
+    left: 57%; /* Ajusta la posición horizontal de la pelota amarilla */
+    transform: translate(-50%, -50%); /* Centra la pelota amarilla en su punto */
+    animation-duration: 15s; /* Controla la velocidad de rotación de la pelota amarilla */
+    height: 190px;
+    width: 190px;
+    z-index: 0;
+}
+
+/* Animación de rotación */
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 .not-found-content {
@@ -26,4 +71,33 @@ body {
     align-items: center;
     height: 100%;
     width: 100%;
+}
+
+h1 {
+    font-size: 14rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.error-message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: fit-content; /* Ajusta el contenedor al contenido más ancho */
+    z-index: 1;
+}
+
+.split-text {
+    display: flex;
+    flex-direction: column; /* Asegura que los textos se apilen verticalmente */
+    align-items: center; /* Centra los elementos */
+    justify-content: center;
+    line-height: 1.5;
+}
+
+.split-text span {
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-align: center;
 }
