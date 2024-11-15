@@ -6,7 +6,7 @@ const loginFormFields = {
   loginPassword: ''
 }
 
-const LoginForm: React.FC = () => {
+export const LoginForm: React.FC = () => {
   const { startLogin, errorMessage } = useAuthStore();
 
   const { formState: { loginEmail, loginPassword }, onInputChange: onLoginInputChange, isFormValid } = useForm(loginFormFields, {
@@ -73,4 +73,4 @@ const LoginForm: React.FC = () => {
   );
 };
 
-export default LoginForm;
+

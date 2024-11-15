@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-const Home: React.FC = () => {
+export const Home: React.FC = () => {
   const [content, setContent] = useState('Bienvenido a la Home');
   const navigate = useNavigate(); // Usamos useNavigate en lugar de useHistory
 
@@ -22,5 +22,4 @@ const Home: React.FC = () => {
   );
 };
 
-export default Home;
 

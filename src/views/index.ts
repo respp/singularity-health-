@@ -1,3 +1,3 @@
-export * from './HomePage'
-export * from './NotFoundPage'
-export * from './LoginPage'
+export * from './home/HomePage'
+export * from './notfound/NotFoundPage'
+export * from './auth/LoginPage'
