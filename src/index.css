@@ -19,12 +19,15 @@
   --green: #9ECB45;
 }
 
+@font-face {
+  font-family: 'Museo Sans';
+  src: url('/fonts/MuseoSansRounded700.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
 
 html, body {
   font-family: 'Open Sans', sans-serif;
-}
-
-.text-regular {
   font-weight: 400; /* Regular */
 }
 

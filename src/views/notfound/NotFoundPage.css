@@ -1,22 +1,21 @@
-/* NotFoundPage.css */
 .not-found-page {
-    width: 100vw; /* Ocupa todo el ancho de la ventana */
-    height: 100vh; /* Ocupa todo el alto de la ventana */
-    overflow: hidden; /* Elimina las barras de desplazamiento */
+    width: 100vw;
+    height: 100vh; 
+    overflow: hidden; 
     padding: 0;
     margin: 0;
     
     /* Imagen de fondo */
-    background-image: url('/images/webp/wave-2.webp'); /* Ruta de tu imagen */
-    background-size: cover; /* Cubre todo el contenedor */
-    background-position: 50% -40%;  /* Pegada arriba y centrada horizontalmente */
-    background-repeat: no-repeat; /* No repetir */
+    background-image: url('/images/wave-2.webp'); 
+    background-size: cover; 
+    background-position: 50% -40%;  
+    background-repeat: no-repeat; 
 
     color: var(--primary-orange);
 }
 
 .balls-bg {
-    position: relative; /* Hacer que el contenedor sea un contenedor de referencia para las pelotas */
+    position: relative; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,30 +24,30 @@
 }
 
 .ball {
-    position: absolute; /* Hace que cada pelota se pueda posicionar independientemente */
+    position: absolute; 
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    animation: rotate 13s linear infinite; /* Animación de rotación */
+    animation: rotate 13s linear infinite; 
 }
 
 .blue-ball {
-    background-image: url('/images/webp/404-circle-blue.webp');
+    background-image: url('/images/404-circle-blue.webp');
     background-position: center;
-    bottom: -20%; /* Ajusta la posición vertical de la pelota azul */
-    left: 10%; /* Ajusta la posición horizontal de la pelota azul */
-    margin-right: 10%; /* Espacio entre las pelotas */
+    bottom: -20%; 
+    left: 10%; 
+    margin-right: 10%; 
     height: 260px;
     width: 260px;
     z-index: 0;
 }
 
 .yellow-ball {
-    background-image: url('/images/webp/404-circle-yellow.webp');
+    background-image: url('/images/404-circle-yellow.webp');
     background-position: center;
-    top: 10%; /* Ajusta la posición vertical de la pelota amarilla */
-    left: 57%; /* Ajusta la posición horizontal de la pelota amarilla */
-    transform: translate(-50%, -50%); /* Centra la pelota amarilla en su punto */
-    animation-duration: 15s; /* Controla la velocidad de rotación de la pelota amarilla */
+    top: 10%; 
+    left: 57%; 
+    transform: translate(-50%, -50%); 
+    animation-duration: 15s; 
     height: 190px;
     width: 190px;
     z-index: 0;
@@ -73,7 +72,7 @@
     width: 100%;
 }
 
-h1 {
+.title-404 {
     font-size: 14rem;
     font-weight: 700;
     margin: 0;
@@ -90,8 +89,8 @@ h1 {
 
 .split-text {
     display: flex;
-    flex-direction: column; /* Asegura que los textos se apilen verticalmente */
-    align-items: center; /* Centra los elementos */
+    flex-direction: column; 
+    align-items: center; 
     justify-content: center;
     line-height: 1.5;
 }
