@@ -1,0 +1,27 @@
+.card-white {
+    width: 180px;
+    height: 180px;
+    background: #FFFFFF;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; /* Centra la imagen dentro de la tarjeta */
+    flex-direction: column;
+    border-radius: 20px; /* Opcional: puedes redondear las esquinas de la tarjeta */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Opcional: sombra para mejorar la estética */
+    color: #707070;
+    transition: transform 0.3s ease-in-out; /* Añadimos transición suave */
+  }
+  
+  .card-white img {
+    width: 33%; /* Ajustamos el tamaño de la imagen en porcentaje */
+    height: auto; /* Mantiene la proporción de la imagen */
+    max-width: 100px; /* Tamaño máximo de la imagen */
+    max-height: 100px; /* Altura máxima de la imagen */
+    object-fit: contain; /* Asegura que la imagen se ajuste sin deformarse */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+  }
+  
+  .card-white:hover {
+    transform: scale(1.05); /* Agranda un 5% cuando se hace hover */
+  }
+  

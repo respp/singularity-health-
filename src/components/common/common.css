@@ -1,0 +1,19 @@
+/* **************** Circle **************** */
+
+.circle-button {
+    display: flex;
+    justify-content: center;
+    width: 2.6rem;
+    height: 2.6rem;
+    border-radius: 50%;
+    background-color: var(--secondary-orange);
+    align-content: flex-end;
+    flex-wrap: wrap;
+    cursor: pointer;
+  }
+  
+  .icon {
+    color: #FFFFFF; /* text-destructive-foreground */
+    font-size: 1.8rem;
+  }
+  

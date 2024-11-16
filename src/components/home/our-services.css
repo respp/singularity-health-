@@ -1,0 +1,43 @@
+.section-our-service{
+  display: flex;
+  flex-direction:row;
+  justify-content: space-around;
+  margin-top: 5%;
+}
+
+.our-services-content {
+  margin-left: 5%;
+}
+
+.our-services-content h2{
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 2rem;
+    font-weight: 700; 
+    color: var(--secondary-orange);
+  }
+
+  .our-services-content h3{
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 1rem;
+    font-weight: 700; 
+    color: var(--secondary-orange);
+    margin-bottom: 20px;
+  }
+
+  .our-services-content p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    color: var(--medium-gray);
+    margin: 22px 0;
+  }
+
+  .services-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas de igual tamaño */
+    grid-template-rows: repeat(2, auto); /* 2 filas, ajustando la altura automáticamente */
+    gap: 20px; /* Espacio entre las tarjetas */
+    justify-items: center; /* Centra las tarjetas dentro de cada celda */
+    align-items: center; /* Alinea las tarjetas verticalmente en el centro */
+    margin-right: 5%;
+  }
+  
