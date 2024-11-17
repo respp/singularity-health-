@@ -50,6 +50,7 @@ export const LoginForm: React.FC = () => {
             value={loginEmail}
             onChange={onLoginInputChange}
             required
+            autoComplete="off"
           />
           <input
             type="password"
