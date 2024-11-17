@@ -73,9 +73,11 @@
 .heading {
   position: relative;
   padding-left: 2rem; /* 'pl-6' equivale a padding-left: 1.5rem */
-  font-weight: 500; /* 'font-medium' */
+  font-weight: 700; /* 'font-medium' */
   letter-spacing: 0.05em; /* 'tracking-wide' */
   text-transform: uppercase; /* 'uppercase' */
+  font-family: 'Gibson Semibold', sans-serif; /* 'font-gibson' */
+  color: #4D4F5C;
 }
 
 .line {
