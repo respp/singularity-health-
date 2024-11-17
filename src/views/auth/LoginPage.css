@@ -4,10 +4,12 @@
   flex-direction: row; /* Coloca los divs en fila */
   width: 100%;
   height: 100vh; /* Ocupa toda la altura de la ventana */
-  
-  /* Fondo con imagen */
-  background-image: url('/images/wave-2.webp'); 
-  background-size: cover; /* Ajusta la imagen para cubrir todo el contenedor */
+}
+
+.login-container {
+  background-image: url('/images/bg-auth.png'); 
+  background-size: 100% 100%;
+  background-size: cover;  /* Ajusta la imagen sin recortarla */
   background-position: center; /* Centra la imagen */
   background-repeat: no-repeat; /* Evita que la imagen se repita */
 }
@@ -21,47 +23,41 @@
   height: 100%; /* Cada div ocupa el 100% de la altura */
 }
 
-/* Caja del formulario */
+.second-container{
+  padding-right: 10%;
+}
+
 .login-box {
   padding: 20px;
   width: 400px;
 }
 
-/* .login-box h1 {
-  margin-bottom: 20px;
-  font-size: 24px;
-} */
-
-/* .login-box input {
-  width: 100%;
-  padding: 10px;
-  margin: 10px 0;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-} */
-
-/* .login-box button {
-  width: 100%;
-  padding: 10px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+.login-container{
+  width: 80%; 
 }
 
-.login-box button:hover {
-  background-color: #0056b3;
-} */
+.circle-pet-icon {
+  width: 302px;
+  height: 302px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 26% 0 0;
+}
 
-/* Estilos para pantallas más grandes */
+.pet-icon{
+  width: 200px;
+  height: 200px;
+}
+
 @media (min-width: 1440px) {
   .login-box {
     width: 500px;
   }
 }
 
-/* Estilos para pantallas más pequeñas */
 @media (max-width: 768px) {
   .login-box {
     width: 100%;

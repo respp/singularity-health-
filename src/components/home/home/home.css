@@ -1,6 +1,6 @@
 .home {
   background-image: url('/images/golden.webp'); /* Ruta de la imagen dentro de la carpeta public */
-  background-position: 89% 58%; /* Ubica la imagen en el costado derecho */
+  background-position: 89% 46%; /* Ubica la imagen en el costado derecho */
   background-size: 28%; /* Asegura que la imagen se ajuste correctamente dentro del contenedor */
   background-repeat: no-repeat; /* Evita que la imagen se repita */
   height: 100vh; /* Establece que el fondo ocupe toda la altura de la pantalla */

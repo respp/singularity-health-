@@ -1,0 +1,37 @@
+footer {
+    display: grid; /* Usamos grid para distribuir las columnas */
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas con igual tamaño */
+    gap: 20px; /* Espaciado entre las columnas */
+    justify-items: center; /* Centra el contenido dentro de cada columna */
+    margin: 21% 0 0 0; /* Margen superior e inferior */
+}
+
+.column-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Centra el contenido dentro de cada columna */
+    font-family: 'Segoe UI', sans-serif;
+}
+
+footer a{
+    text-decoration: none;
+    font-size: 1rem;
+    margin: 4px 0 ;
+    color: #FFFFFF;
+
+}
+
+footer p{
+    color: #FFFFFF;
+}
+
+.subtitle {
+    color: #FFE530;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.none{
+    color: var(--tertiary-orange);
+}

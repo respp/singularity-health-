@@ -1,0 +1,61 @@
+/* Contenedor de la sección */
+.make-fetch-section {
+    position: relative; /* Permite posicionar el contenido sobre la imagen */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15%;
+    height: auto;
+}
+
+/* Estilo de la imagen */
+.make-fetch-section img {
+    width: 100%;  /* La imagen ocupa todo el ancho del contenedor */
+    max-width: 80%;  /* Ajusta el tamaño máximo de la imagen al 80% del ancho de la pantalla */
+    max-height: 70%; /* Ajusta el tamaño máximo de la imagen al 70% de la altura de la pantalla */
+    object-fit: cover; /* Ajusta la imagen sin distorsionarla */
+    border-radius: 10px;
+}
+
+/* Contenedor del texto sobre la imagen */
+.make-fetch-content {
+    position: absolute; /* Coloca el contenido sobre la imagen */
+    color: #fff; /* Color blanco para el texto */
+    text-align: center;
+    width: 100%;
+    top: 50%;
+    left: 83%;
+    transform: translate(-50%, -50%); /* Centra el texto vertical y horizontalmente */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilos del texto */
+.make-fetch-content h2 {
+    font-family: 'Open Sans', sans-serif;
+    text-align: start;
+    width: 80%;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #FFE530;
+    margin: 0;
+}
+
+.make-fetch-content p {
+    font-family: 'Open Sans', sans-serif;
+    text-align: start;
+    width: 50%;
+    font-size: 1.36rem;
+    color: #F8F8F8;
+    margin: 30px 0;
+}
+
+.btn-join {
+    color: var(--tertiary-orange);
+    background-color: #F8F8F8;
+    align-items: center;
+    width: 126px;
+    height: 53px;
+    border: 1px solid #ddd; 
+}

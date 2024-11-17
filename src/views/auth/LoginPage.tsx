@@ -4,15 +4,12 @@ import './LoginPage.css';
 export const LoginPage = () => {
   return (
     <div className="login-page">
-      {/* Fondo decorativo con gradiente */}
-      {/* <div className="background-gradient">bsdb</div> */}
-
-      {/* Primer div: Formulario de login */}
       <div className="login-container">
-        
+        <div className="circle-pet-icon">
+          <img src="/icons/pet.svg" alt="" className="pet-icon" />
+        </div>
       </div>
 
-      {/* Segundo div: Puede ser para otro contenido */}
       <div className="second-container">
         <div className="login-box">
             <h3 className="heading">

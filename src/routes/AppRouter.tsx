@@ -10,7 +10,6 @@ const AppRoutes: React.FC = () => {
     checkAuthToken();
   }, []);
 
-  // Mostrar un estado de carga mientras se verifica el token de autenticación
   if (status === 'checking') return <h3>Loading...</h3>;
 
   return (

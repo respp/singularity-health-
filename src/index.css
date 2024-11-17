@@ -19,6 +19,10 @@
   --green: #9ECB45;
 }
 
+body{
+  overflow-x: hidden;
+}
+
 @font-face {
   font-family: 'Museo Sans';
   src: url('/fonts/MuseoSansRounded700.otf') format('opentype');

@@ -1,5 +1,5 @@
 import { NotFound } from "../../components";
-import "./NotFoundPage.css"; // Asegúrate de crear este archivo de estilos si no existe.
+import "./NotFoundPage.css"; 
 
 export const NotFoundPage = () => {
   return (

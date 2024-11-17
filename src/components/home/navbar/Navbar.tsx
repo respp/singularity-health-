@@ -35,7 +35,11 @@ export const NavbarComponent = () => {
   return (
     <Navbar variant="dark" expand="lg" className='text-regular'>
       <Container>
-        <Navbar.Brand href="#home">brand-here</Navbar.Brand>
+        <Navbar.Brand href="#home">
+        <div className="circle-brand-icon">
+          <img src="/icons/pet.svg" alt="" className="brand-icon" />
+        </div>
+        </Navbar.Brand>
         {/* Botón hamburguesa para pantallas pequeñas */}
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
