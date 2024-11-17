@@ -1,3 +1,4 @@
+//Con este hook manejo la asincronía de la autenticación
 
 import { useDispatch, useSelector } from "react-redux"
 import { loginApi } from '../services/login'

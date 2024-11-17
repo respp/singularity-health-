@@ -1,11 +1,12 @@
 // src/store/store.ts
 import { configureStore } from '@reduxjs/toolkit';
-import { authSlice } from './slices';
+import { authSlice, homeTextSlice } from './slices';
 
 // Configuración del store
 const store = configureStore({
   reducer: {
     auth: authSlice.reducer,
+    homeText: homeTextSlice.reducer,
   },
   middleware: (getDefaultMiddleware) => getDefaultMiddleware({
     serializableCheck: false

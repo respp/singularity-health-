@@ -1,15 +1,17 @@
 import { Button } from 'react-bootstrap';
 import './home.css'
+import { useSelector } from 'react-redux';
 
 
 export const Home: React.FC = () => {
+  const homeText = useSelector((state: any) => state.homeText.text);
+  console.log({homeText})
+
   return (
     <div className="home">
         <div className='home-content'>
       <h1 className="home-title">We Get Pet Care!</h1>
-      <p>For over 17 Years, Fetch! Pet Care Has been a trusted <br />
-      partner in keeping pets healthy and happy! </p>
-
+        <p>{homeText}</p>
       <div className="options">
       <Button 
         variant="primary" 
