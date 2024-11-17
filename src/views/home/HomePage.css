@@ -1,23 +1,21 @@
 /* Estilo para el HomePage */
-body {
+html, body {
+    height: 100%;
     margin: 0;
     padding: 0;
-    height: 100%;
-    width: 100%;
 }
+
 
 .home-page {
     width: 100%; /* Ocupa todo el ancho de la pantalla */
-    height: 597vh; /* La altura será proporcional al ancho */
+    /* height: 597vh;  */
+    min-height: 100vh;
     background-color: #db581b;
 
     padding: 0;
     margin: 0;    
     background-image: url('/images/bg-image.jpg'); /* Ruta de tu imagen */
-    background-size: contain; /* Ajusta la imagen para que se contenga en el contenedor */
+    background-size: cover; /* Ajusta la imagen para que se contenga en el contenedor */
     background-repeat: no-repeat; /* Evita que se repita */
     background-position: top center; /* Centra la imagen horizontalmente y se alinea arriba */
   }
-
-
-  
