@@ -1,6 +1,7 @@
 import { Button } from 'react-bootstrap';
 import './home.css'
 
+
 export const Home: React.FC = () => {
   return (
     <div className="home">

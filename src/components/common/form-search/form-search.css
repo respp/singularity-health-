@@ -1,0 +1,16 @@
+.circle-container {
+  position: absolute;
+  right: 7px;
+  top: 50%;
+  padding: 5px 0;
+  transform: translateY(-50%);
+}
+
+.form-control {
+  border-radius: 100px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sutil sombra gris hacia abajo */
+  
+  
+  padding-left: 20px; 
+  /* font-size: 14px;  */
+}

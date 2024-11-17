@@ -1,0 +1,31 @@
+
+
+.carrousel-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Asegura que el item ocupe todo el ancho disponible */
+  }
+  
+
+/* Estilo para las imágenes dentro del slider */
+.carrousel-card {
+    width: 100%; /* Las imágenes ocupan todo el ancho del contenedor */
+    max-width: 700px; 
+    height: 450px; /* Altura fija para las imágenes */
+    object-fit: cover; /* Asegura que las imágenes cubran completamente el área sin deformarse */
+    border-radius: 10px; /* Bordes redondeados en las imágenes */
+  }
+  
+  /* Estilo para las leyendas */
+  .carousel-caption {
+    color: white; /* Texto blanco */
+    padding: 20px;
+    border-radius: 10px; /* Bordes redondeados en la leyenda */
+  }
+  
+  .carousel-caption p{
+    margin-bottom: 20%;
+  }
+
+  

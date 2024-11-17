@@ -1,0 +1,11 @@
+.testimonial-section {
+    margin: 20% 0;
+}
+
+.testimonial-section h2{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+    font-weight: 700; 
+    color: var(--secondary-orange);
+    text-align: center;
+  }

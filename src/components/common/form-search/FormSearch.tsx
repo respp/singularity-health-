@@ -1,5 +1,5 @@
 import Form from 'react-bootstrap/Form';
-import { Circle } from './Circle';
+import { Circle } from '../circle/Circle';
 import './form-search.css'
 
 interface FormSearchProps {

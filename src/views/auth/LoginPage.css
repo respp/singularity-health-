@@ -1,62 +1,89 @@
-    .login-page {
-        background-color: #FFFFFF;
-    }
+.login-page {
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: row; /* Coloca los divs en fila */
+  width: 100%;
+  height: 100vh; /* Ocupa toda la altura de la ventana */
   
-  /* Contenedor del formulario */
-  .login-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-  }
-  
-  /* Caja del formulario */
+  /* Fondo con imagen */
+  background-image: url('/images/wave-2.webp'); 
+  background-size: cover; /* Ajusta la imagen para cubrir todo el contenedor */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+
+.login-container,
+.second-container {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centra el contenido dentro de cada div */
+  width: 50%; /* Cada div ocupa el 50% del ancho */
+  height: 100%; /* Cada div ocupa el 100% de la altura */
+}
+
+/* Caja del formulario */
+.login-box {
+  padding: 20px;
+  width: 400px;
+}
+
+/* .login-box h1 {
+  margin-bottom: 20px;
+  font-size: 24px;
+} */
+
+/* .login-box input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+} */
+
+/* .login-box button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-box button:hover {
+  background-color: #0056b3;
+} */
+
+/* Estilos para pantallas más grandes */
+@media (min-width: 1440px) {
   .login-box {
-    background-color: #fff;
+    width: 500px;
+  }
+}
+
+/* Estilos para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .login-box {
+    width: 100%;
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
-  
-  .login-box h1 {
-    margin-bottom: 20px;
-    font-size: 24px;
-  }
-  
-  .login-box input {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  .login-box button {
-    width: 100%;
-    padding: 10px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .login-box button:hover {
-    background-color: #0056b3;
-  }
-  
-  /* Estilos para 1440px y superiores */
-  @media (min-width: 1440px) {
-    .login-box {
-      width: 500px;
-    }
-  }
-  
-  /* Estilos para pantallas más pequeñas */
-  @media (max-width: 768px) {
-    .login-box {
-      width: 100%;
-      padding: 20px;
-    }
-  }
-  
+}
+
+/* ************************* Title ************************* */
+.heading {
+  position: relative;
+  padding-left: 2rem; /* 'pl-6' equivale a padding-left: 1.5rem */
+  font-weight: 500; /* 'font-medium' */
+  letter-spacing: 0.05em; /* 'tracking-wide' */
+  text-transform: uppercase; /* 'uppercase' */
+}
+
+.line {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%); /* Equivalente a '-translate-y-1/2' */
+  height: 1.8rem; /* 'h-5' es 1.25rem */
+  width: 0.4rem; /* 'w-1' es 0.25rem */
+  background-color: var(--primary-orange); /* Usa el color que tienes definido como destructive */
+}

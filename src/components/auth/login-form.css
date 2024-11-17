@@ -1,0 +1,35 @@
+
+  .form-inputs{
+    margin: 20px 0;
+    gap: 1rem;
+  }
+
+  .form-inputs input{
+    margin-bottom: 10px;
+  }
+  
+  .form-inputs p{
+    margin:20px 0 30px 0;
+    text-align: end;
+  }
+
+  form p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #A4AFB7;
+  }
+
+  form a{
+    color: #015F91;
+    text-decoration: none;
+  }
+
+  .log-panel{
+    width: 100%;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+  }

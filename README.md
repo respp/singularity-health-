@@ -22,5 +22,3 @@ src/
 │   └── reducers/
 └── utils/
     ├── helpers.ts
-
-verificar las fuentes de los titulos (y en general)

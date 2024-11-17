@@ -9,7 +9,9 @@
     background-color: var(--secondary-orange);
     align-content: flex-end;
     flex-wrap: wrap;
-    cursor: pointer;
+    border: none; /* Elimina el borde */
+    outline: none; /* Elimina el contorno del botón cuando es enfocado */
+    cursor: pointer; /
   }
   
   .icon {
