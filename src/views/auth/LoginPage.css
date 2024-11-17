@@ -1,0 +1,87 @@
+.login-page {
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: row; /* Coloca los divs en fila */
+  width: 100%;
+  height: 100vh; /* Ocupa toda la altura de la ventana */
+}
+
+.login-container {
+  background-image: url('/images/bg-auth.png'); 
+  background-size: 100% 100%;
+  background-size: cover;  /* Ajusta la imagen sin recortarla */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+
+.login-container,
+.second-container {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centra el contenido dentro de cada div */
+  width: 50%; /* Cada div ocupa el 50% del ancho */
+  height: 100%; /* Cada div ocupa el 100% de la altura */
+}
+
+.second-container{
+  padding-right: 10%;
+}
+
+.login-box {
+  padding: 20px;
+  width: 400px;
+}
+
+.login-container{
+  width: 80%; 
+}
+
+.circle-pet-icon {
+  width: 302px;
+  height: 302px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 26% 0 0;
+}
+
+.pet-icon{
+  width: 200px;
+  height: 200px;
+}
+
+@media (min-width: 1440px) {
+  .login-box {
+    width: 500px;
+  }
+}
+
+@media (max-width: 768px) {
+  .login-box {
+    width: 100%;
+    padding: 20px;
+  }
+}
+
+/* ************************* Title ************************* */
+.heading {
+  position: relative;
+  padding-left: 2rem; /* 'pl-6' equivale a padding-left: 1.5rem */
+  font-weight: 700; /* 'font-medium' */
+  letter-spacing: 0.05em; /* 'tracking-wide' */
+  text-transform: uppercase; /* 'uppercase' */
+  font-family: 'Gibson Semibold', sans-serif; /* 'font-gibson' */
+  color: #4D4F5C;
+}
+
+.line {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%); /* Equivalente a '-translate-y-1/2' */
+  height: 1.8rem; /* 'h-5' es 1.25rem */
+  width: 0.4rem; /* 'w-1' es 0.25rem */
+  background-color: var(--primary-orange); /* Usa el color que tienes definido como destructive */
+}

@@ -1,0 +1,93 @@
+.home {
+  background-image: url('/images/golden.webp');
+  background-position: 89% 46%;
+  background-size: 28%;
+  background-repeat: no-repeat;
+  height: 100vh;
+  animation: slideIn 3s ease-out forwards; /* Aplica la animación */
+}
+
+@keyframes slideIn {
+  0% {
+    background-position: 100% 50%; /* Comienza desde fuera de la pantalla */
+    opacity: 0; /* Comienza invisible */
+  }
+  100% {
+    background-position: 89% 46%; /* Posición final en su lugar */
+    opacity: 1; /* Se hace completamente visible */
+  }
+}
+
+
+.home-content {
+  padding-top: 165px;
+  margin-left: 100px;
+  width: 50%;
+  color: #fff; /* Asegura que el texto se vea en blanco */
+}
+
+.home-title {
+  font-family: 'Museo Sans', sans-serif;
+  font-size: 58px;
+  font-weight: 700;
+  margin-bottom: 3%;
+  color: #fff; /* Texto en blanco */
+  overflow: hidden; /* Asegura que el texto no se desborde */
+  border-right: .15em solid #fff; /* Simula el cursor de la máquina de escribir */
+  width: 0; /* Inicia con el ancho en 0 */
+  white-space: nowrap; /* Evita que el texto se parta en varias líneas */
+  animation: typing 4s steps(30) 1s forwards, blink 0.75s step-end 4s forwards; /* Aplicamos dos animaciones */
+}
+
+/* Animación de escritura */
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+/* Parpadeo del cursor */
+@keyframes blink {
+  0% {
+    border-color: #fff;
+  }
+  100% {
+    border-color: transparent; /* El cursor desaparece al final */
+  }
+}
+
+
+
+.home-content p {
+  color: #fff; /* Texto en blanco */
+  font-size: 17px;
+  margin-bottom: 4%;
+  font-family: 'Open Sans', sans-serif; /* Si deseas que el texto use Open Sans */
+  width: 70%;
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 53%;
+}
+
+.button-txt {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+}
+
+.options a {
+  color: #fff; /* Texto en blanco */
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.text-regular {
+  font-family: 'Open Sans', sans-serif; /* Si deseas que el navbar use Open Sans */
+  font-size: 14px;
+}

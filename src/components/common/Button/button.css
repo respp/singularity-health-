@@ -1,0 +1,16 @@
+.custom-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.85rem 2.5rem; /* Aumentamos el padding horizontal */
+  background-color: #4487FF;
+  border-color: #4487FF;
+  width: 50%;
+  height: 50%;
+  letter-spacing: 1;
+}
+
+.custom-button p{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+}

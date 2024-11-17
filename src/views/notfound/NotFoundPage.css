@@ -1,0 +1,104 @@
+.not-found-page {
+    width: 100vw;
+    height: 100vh; 
+    overflow: hidden; 
+    padding: 0;
+    margin: 0;
+    
+    /* Imagen de fondo */
+    background-image: url('/images/wave-2.webp'); 
+    background-size: cover; 
+    background-position: 50% -40%;  
+    background-repeat: no-repeat; 
+
+    color: var(--primary-orange);
+}
+
+.balls-bg {
+    position: relative; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.ball {
+    position: absolute; 
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    animation: rotate 13s linear infinite; 
+}
+
+.blue-ball {
+    background-image: url('/images/404-circle-blue.webp');
+    background-position: center;
+    bottom: -20%; 
+    left: 10%; 
+    margin-right: 10%; 
+    height: 260px;
+    width: 260px;
+    z-index: 0;
+}
+
+.yellow-ball {
+    background-image: url('/images/404-circle-yellow.webp');
+    background-position: center;
+    top: 10%; 
+    left: 57%; 
+    transform: translate(-50%, -50%); 
+    animation-duration: 15s; 
+    height: 190px;
+    width: 190px;
+    z-index: 0;
+}
+
+/* Animación de rotación */
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.not-found-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.title-404 {
+    font-size: 14rem;
+    font-weight: 700;
+    margin: 0;
+    font-family: 'Comfortaa', sans-serif;
+    font-weight: 700; 
+}
+
+.error-message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: fit-content; /* Ajusta el contenedor al contenido más ancho */
+    z-index: 1;
+}
+
+.split-text {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center;
+    line-height: 1.5;
+}
+
+.split-text span {
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-align: center;
+}

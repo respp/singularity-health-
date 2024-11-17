@@ -1,0 +1,101 @@
+
+.container-slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    /* gap: 4rem; */
+    width: 94%;
+    min-height: 350px;
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  
+  .cards-container {
+    position: relative;
+    width: 88%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .card {
+    position: absolute;
+    width: 100%;
+    max-width: 600px;
+    height: 340px;
+    padding: .8rem;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    opacity: 0;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+  }
+  
+  .card.active {
+    opacity: 1;
+    z-index: 2;
+    transform: scale(1.2);
+  }
+  
+  /* Definir los colores de las tarjetas */
+  .card.blue {
+    background-color: #4F46E5;
+    color: white;
+  }
+  
+  .card.red {
+    background-color: #EF4444;
+    color: white;
+  }
+  
+  /* Control de transformaciones para las tarjetas */
+  .card:not(.active) {
+    transform: scale(0.9);
+  }
+  
+  /* Estilo para las flechas de navegación */
+  .navigation-button{
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: var(--secondary-orange);
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 3;
+    transition: transform 0.2s ease;
+  }
+  
+  .navigation-button:hover {
+    transform: scale(1.1);
+  }
+    .profile {
+        border-radius: 50%; /* Hace que la imagen sea circular */
+        height: 60px; /* Altura de 80px */
+        width: 60px; /* Ancho de 80px */
+        object-fit: cover; /* Asegura que la imagen cubra el contenedor */
+      }
+
+      .card p{
+        font-family: 'Open Sans', sans-serif;
+        font-size: .7rem;
+        font-weight: 400;
+        text-align: center;
+        margin-top: .7rem;
+      }
+      
+      .name{
+        font-family: 'Open Sans', sans-serif;
+        font-size: .9rem;
+        font-weight: 400;
+        text-align: center;
+        margin-top: .7rem;
+      }

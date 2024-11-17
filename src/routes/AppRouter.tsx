@@ -1,17 +1,26 @@
 import { Routes, Route, Navigate } from 'react-router-dom';
 import { useAuthStore } from '../hooks';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { LoginPage, NotFoundPage, HomePage } from '../views';
+import {SpinnerComponent} from '../components'
 
 const AppRoutes: React.FC = () => {
   const { status, checkAuthToken } = useAuthStore();
+  const [_loading, setLoading] = useState<boolean>(true);
+
 
   useEffect(() => {
     checkAuthToken();
   }, []);
 
-  // Mostrar un estado de carga mientras se verifica el token de autenticación
-  if (status === 'checking') return <h3>Loading...</h3>;
+  useEffect(() => {
+    if (status !== 'checking') {
+      // Después de que se haya realizado la verificación, esperamos un poco antes de quitar el spinner
+      setTimeout(() => setLoading(false), 1000);  // 1 segundo de retraso
+    }
+  }, [status]);
+
+  if (status === 'checking') return <SpinnerComponent />;
 
   return (
     <Routes>

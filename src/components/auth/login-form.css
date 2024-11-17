@@ -1,0 +1,52 @@
+
+  .form-inputs{
+    margin: 20px 0;
+    gap: 1rem;
+  }
+
+  .form-inputs input {
+    margin-bottom: 10px;
+    padding: 0.55rem;
+    border: none; /* Quitamos los bordes */
+    outline: none; /* Eliminamos el borde al hacer focus */
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.15);
+    border-radius: 2px; /* Le damos bordes redondeados para mejor estética */
+    background-color: #fff; /* Fondo blanco para que contraste */
+    transition: box-shadow 0.3s ease;
+}
+
+/* Efecto al hacer focus en el input */
+.form-inputs input:focus {
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.form-inputs input::placeholder {
+  color: #A4AFB7; /* Gris claro */
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+}
+  .form-inputs p{
+    margin:20px 0 30px 0;
+    text-align: end;
+  }
+
+  form p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    color: #A4AFB7;
+  }
+
+  form a{
+    color: #015F91;
+    text-decoration: none;
+  }
+
+  .log-panel{
+    width: 100%;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+  }

@@ -2,6 +2,7 @@ import ReactDOM from 'react-dom/client';  // Importar desde 'react-dom/client'
 import './index.css';
 import { BrowserRouter as Router } from "react-router-dom";
 import App from './App';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { Provider } from 'react-redux';
 import store from './store/store';
 

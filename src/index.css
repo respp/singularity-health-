@@ -19,12 +19,54 @@
   --green: #9ECB45;
 }
 
+body{
+  overflow-x: hidden;
+}
+
+@font-face {
+  font-family: 'Museo Sans';
+  src: url('/fonts/MuseoSansRounded700.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Comfortaa';
+  src: url('/fonts/Comfortaa-Regular.ttf') format('truetype'); /* Formato para TTF */
+  font-weight: 400; /* Regular */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Comfortaa';
+  src: url('/fonts/Comfortaa-Bold.ttf') format('truetype'); /* Formato para TTF */
+  font-weight: 700; /* Bold */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gibson Semibold';
+  src: url('/fonts/Gibson-SemiBold.ttf') format('opentype'); /* Formato para TTF */
+  font-weight: 600; /* Bold */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Segoe UI';
+  src: url('/fonts/Segoe-UI-Bold.ttf') format('truetype'); /* Formato para TTF */
+  font-weight: 700; /* Bold */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Segoe UI';
+  src: url('/fonts/Segoe-UI.ttf') format('truetype'); /* Formato para TTF */
+  font-weight: 400; /* Bold */
+  font-style: normal;
+}
 
 html, body {
   font-family: 'Open Sans', sans-serif;
-}
-
-.text-regular {
   font-weight: 400; /* Regular */
 }
 
