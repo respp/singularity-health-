@@ -5,7 +5,7 @@
 1. **Clonar el repositorio:**
 Clona este repositorio a tu máquina local utilizando:
 
-        git clone https://github.com/tu-usuario/web-app-development.git
+        git clone https://github.com/respp/web-app-development.git
 
 2. **Instalar dependencias:**
     Dentro de la carpeta del proyecto, instala las dependencias necesarias ejecutando:
