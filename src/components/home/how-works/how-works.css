@@ -1,0 +1,64 @@
+.section-how-works {
+    /* display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+    margin-top: 9%; */
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2%;
+}
+  
+  .how-works-content {
+    margin-right: 15%;
+  }
+  
+  .how-works-content h2{
+      font-family: 'Open Sans', sans-serif;
+      font-size: 2rem;
+      font-weight: 700; 
+      color: var(--secondary-orange);
+    }
+  
+    .how-works-content h3{
+      font-family: 'Open Sans', sans-serif;
+      font-size: 1rem;
+      font-weight: 700; 
+      color: var(--secondary-orange);
+      margin-bottom: 23px;
+    }
+  
+    .how-works-content p{
+      font-family: 'Open Sans', sans-serif;
+      color: var(--medium-gray);
+      margin: 22px 0;
+    }
+
+    .right-card {
+        margin-left: 254px;
+    }
+
+    .how-works-cards {
+        display: flex;
+        flex-direction: column;
+        margin-left: 11%;
+    }
+
+    .dotted-curve {
+        position: absolute;
+        cursor: default;
+        top: -20px; /* Ajusta la posición de la curva respecto a las cards */
+        left: 0;
+        width: 100%;
+        height: 200px;
+        z-index: 0; /* Detrás de las cards */
+        transform: translateY(75%) translateX(-23%) rotate(90deg); /* Ajusta la curva a la izquierda */
+    }
+    
+    
+    /* Cards on top of the dotted curve */
+    .how-works-cards > .card {
+        position: relative;
+        z-index: 2; /* Asegura que las cards estén encima de la curva */
+    }
