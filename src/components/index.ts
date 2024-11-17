@@ -8,6 +8,7 @@ export * from './home/testimonial-slider/Testimonial';
 export * from './home/how-works/HowWorks';    
 export * from './home/make-fetch/MakeFetch';    
 export * from './home/footer/Footer';    
+export * from './common/SpinnerComponent'
 
 // export * from './common/ErrorMessage'
 // export * from './common/Loader'
